@@ -1,59 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="37.97665">
-    <testcase classname="[US2]Authentification" name="[US2] Connexion réussie" time="12.857045">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="6.71525">
+    <testcase classname="[US8]Accès aux détails des articles" name="[US8]Accès aux détails des articles" time="6.71525">
         <system-out>
             <![CDATA[Given j ouvre l application practice.automationtesting......................passed
-When j accède la page My Account............................................passed
-And je saisis un login "poecgroupe4@yopmail.com"............................passed
-And je saisis un mot de passe "Ab_groupe4"..................................passed
-And je clique sur LOGIN.....................................................passed
-Then la page Dashbord saffiche..............................................passed
-And je verifie le bon fonctionnement menu...................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="[US2]Authentification" name="[US2]Connexion échouée" time="5.906403">
-        <system-out>
-            <![CDATA[Given j ouvre l application practice.automationtesting......................passed
-When j accède la page My Account............................................passed
-And je saisis un login "poecgroupe4@yopmail.com"............................passed
-And je saisis un mot de passe "Abgroupe4"...................................passed
-And je clique sur LOGIN.....................................................passed
-Then un message d'erreur s affiche "ERROR: The password you entered for the username incorret".passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="[US2]Authentification" name="[US2]Connexion échouée 2" time="5.2149">
-        <system-out>
-            <![CDATA[Given j ouvre l application practice.automationtesting......................passed
-When j accède la page My Account............................................passed
-And je saisis un login "testpractise@poec.fr"...............................passed
-And je saisis un mot de passe "TEST!Poec12".................................passed
-And je clique sur LOGIN.....................................................passed
-Then un message d'erreur s affiche "Error: A user could not be found with this email address".passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="[US5]Visualisation des informations d' un utilisateur" name="[US5]Informations de compte  Client" time="6.186898">
-        <system-out>
-            <![CDATA[Given j ouvre l application practice.automationtesting......................passed
-When je me connecte "poecgroupe4@yopmail.com" "Ab_groupe4"..................passed
-And je clique sur  Account Details..........................................passed
-Then Un formulaire avec les informations de client saffiche.................passed
-And Un espace permet de modifier son mot de passe s affiche.................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="[US2]Authentification" name="[US2]Cocher l'option Remember" time="7.811404">
-        <system-out>
-            <![CDATA[Given j ouvre l application practice.automationtesting......................passed
-When j accède la page My Account............................................passed
-And je saisis un login "poecgroupe4@yopmail.com"............................passed
-And je saisis un mot de passe "Ab_groupe4"..................................passed
-And je coche l'option remember me...........................................passed
-And je clique sur LOGIN.....................................................passed
-Then la page Dashbord saffiche..............................................passed
-And je verifie le champ login prerempli.....................................passed
+And je clique sur le lien SHOP..............................................passed
+When je clique sur un article...............................................passed
+Then la page detail article s'affiche.......................................passed
+And je verifie le bon affichage des details articles........................passed
+And je verifie l affichage le bouton ADD TO BASKET..........................passed
+And je verifie un champ permet d indiquer le nombre exemplaire voulu........passed
 ]]>
         </system-out>
     </testcase>

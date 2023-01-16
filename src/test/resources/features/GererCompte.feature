@@ -20,4 +20,4 @@ Feature: [US5]Visualisation des informations d' un utilisateur
     And   Un espace permet de modifier son mot de passe s affiche
     Examples:
       |login                     | MDP|
-      |poecgroupe4@yopmail.com   |Ab_groupe4|
+      |poecgroupe4@yopmail.com   |Cd_groupe4|

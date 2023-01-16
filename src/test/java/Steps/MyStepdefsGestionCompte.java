@@ -4,6 +4,7 @@ import Commun.Hooks;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -24,15 +25,28 @@ public class MyStepdefsGestionCompte extends Hooks {
     public void jeCliqueSurAccountDetails() {
         WebElement btnDetails = driver.findElement(By.xpath("//a[@href='https://practice.automationtesting.in/my-account/edit-account/']"));
         btnDetails.click();
+
     }
 
     @Then("Un formulaire avec les informations de client saffiche")
     public void unFormulaireAvecLesInformationsDeClientSaffiche() {
-        System.out.println("Formulaire OK");
+        WebElement champUserName = driver.findElement(By.xpath("//input[@name=\"account_first_name\"]"));
+        Assert.assertTrue(champUserName.isDisplayed());
+        WebElement champLastName = driver.findElement(By.xpath("//input[@name=\"account_last_name\"]"));
+        Assert.assertTrue(champLastName.isDisplayed());
+        WebElement champMail = driver.findElement(By.xpath("//input[@name=\"account_email\"]"));
+        Assert.assertTrue(champMail.isDisplayed());
+
     }
 
     @And("Un espace permet de modifier son mot de passe s affiche")
     public void unEspacePermetDeModifierSonMotDePasseSAffiche() {
-        System.out.println("MDP OK");
+        WebElement currentPassword = driver.findElement(By.xpath("//input[@name=\"password_current\"]"));
+        Assert.assertTrue(currentPassword.isDisplayed());
+        WebElement newPassWord = driver.findElement(By.xpath("//input[@name=\"password_1\"]"));
+        Assert.assertTrue(newPassWord.isDisplayed());
+        WebElement confirmNewPassWord = driver.findElement(By.xpath("//input[@name=\"password_2\"]"));
+        Assert.assertTrue(confirmNewPassWord.isDisplayed());
+
     }
 }

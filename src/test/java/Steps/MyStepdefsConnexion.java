@@ -16,11 +16,8 @@ import java.util.concurrent.TimeUnit;
 public class MyStepdefsConnexion extends Hooks {
     @Given("j ouvre l application practice.automationtesting")
     public void jOuvreLApplicationPracticeAutomationtesting() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://practice.automationtesting.in/");
-        driver.manage().window().maximize();
+        super.initDriver();
+        System.out.println("Ouverture Application");
     }
 
     @When("j accède la page My Account")
@@ -54,7 +51,6 @@ public class MyStepdefsConnexion extends Hooks {
     }
 
 
-
     @Then("un message d'erreur s affiche {string}")
     public void unMessageDErreurSAffiche(String Msg) {
         System.out.println(Msg);
@@ -72,8 +68,11 @@ public class MyStepdefsConnexion extends Hooks {
     public void jeVerifieLeChampLoginPrerempli() {
         WebElement logout = driver.findElement(By.xpath("//a[@href='https://practice.automationtesting.in/my-account/customer-logout/']"));
         logout.click();
-        WebElement loginElt = driver.findElement(By.id("username"));
-        loginElt.click();
-        System.out.println("OK");
+       /* WebElement loginChamp = driver.findElement(By.id("woocommerce-login-nonce"));
+        Assert.assertTrue(loginChamp.isDisplayed());
+        //findElement(By.xpath("//input[@name='_wp_http_referer']"));
+       // loginChamp.click();
+       // loginElt.click();
+        //loginElt.sendKeys(loginElt.getAttribute("value"));*/
     }
 }

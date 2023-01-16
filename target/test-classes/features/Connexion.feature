@@ -12,4 +12,4 @@ Feature: [US2]Authentification
     And   je verifie le bon fonctionnement menu
     Examples:
       |login                          | MDP|
-      |poecgroupe4@yopmail.com        | Ab_groupe4|
+      |poecgroupe4@yopmail.com        | Cd_groupe4|
