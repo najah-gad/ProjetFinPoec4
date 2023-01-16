@@ -1,0 +1,656 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 15,
+        "name": "[US2] Connexion réussie",
+        "description": "",
+        "id": "[us2]authentification;[us2]-connexion-réussie;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4820303600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "j ouvre l application practice.automationtesting",
+            "match": {
+              "location": "MyStepdefsConnexion.jOuvreLApplicationPracticeAutomationtesting()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 858633200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "j accède la page My Account",
+            "match": {
+              "location": "MyStepdefsConnexion.jAccèdeLaPageMyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 189440600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "je saisis un login \"poecgroupe4@yopmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"poecgroupe4@yopmail.com\"",
+                  "offset": 19
+                }
+              ],
+              "location": "MyStepdefsConnexion.jeSaisisUnLogin(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58359500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "je saisis un mot de passe \"Ab_groupe4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ab_groupe4\"",
+                  "offset": 26
+                }
+              ],
+              "location": "MyStepdefsConnexion.jeSaisisUnMotDePasse(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 795703000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "je clique sur LOGIN",
+            "match": {
+              "location": "MyStepdefsConnexion.jeCliqueSurLOGIN()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47422300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "la page Dashbord saffiche",
+            "match": {
+              "location": "MyStepdefsConnexion.laPageDashbordSaffiche()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6085508800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "je verifie le bon fonctionnement menu",
+            "match": {
+              "location": "MyStepdefsMyAccount.jeVerifieLeBonFonctionnementMenu()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@REQ_POEC4-2"
+          },
+          {
+            "name": "@TEST_POEC4-19"
+          },
+          {
+            "name": "@TESTSET_POEC4-63"
+          },
+          {
+            "name": "@GR4"
+          }
+        ]
+      }
+    ],
+    "name": "[US2]Authentification",
+    "description": "",
+    "id": "[us2]authentification",
+    "keyword": "Feature",
+    "uri": "classpath:features/Connexion.feature",
+    "tags": [
+      {
+        "name": "@REQ_POEC4-2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 14,
+        "name": "[US2]Connexion échouée",
+        "description": "",
+        "id": "[us2]authentification;[us2]connexion-échouée;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4051683100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "j ouvre l application practice.automationtesting",
+            "match": {
+              "location": "MyStepdefsConnexion.jOuvreLApplicationPracticeAutomationtesting()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 941544600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "j accède la page My Account",
+            "match": {
+              "location": "MyStepdefsConnexion.jAccèdeLaPageMyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 236481100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "je saisis un login \"poecgroupe4@yopmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"poecgroupe4@yopmail.com\"",
+                  "offset": 19
+                }
+              ],
+              "location": "MyStepdefsConnexion.jeSaisisUnLogin(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68474300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "je saisis un mot de passe \"Abgroupe4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Abgroupe4\"",
+                  "offset": 26
+                }
+              ],
+              "location": "MyStepdefsConnexion.jeSaisisUnMotDePasse(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 606108700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "je clique sur LOGIN",
+            "match": {
+              "location": "MyStepdefsConnexion.jeCliqueSurLOGIN()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 210800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "un message d\u0027erreur s affiche \"ERROR: The password you entered for the username incorret\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ERROR: The password you entered for the username incorret\"",
+                  "offset": 30
+                }
+              ],
+              "location": "MyStepdefsConnexion.unMessageDErreurSAffiche(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@REQ_POEC4-2"
+          },
+          {
+            "name": "@TEST_POEC4-25"
+          },
+          {
+            "name": "@TESTSET_POEC4-63"
+          },
+          {
+            "name": "@GR4"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "[US2]Connexion échouée",
+        "description": "",
+        "id": "[us2]authentification;[us2]connexion-échouée;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3295762200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "j ouvre l application practice.automationtesting",
+            "match": {
+              "location": "MyStepdefsConnexion.jOuvreLApplicationPracticeAutomationtesting()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 976007000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "j accède la page My Account",
+            "match": {
+              "location": "MyStepdefsConnexion.jAccèdeLaPageMyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 81025700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "je saisis un login \"testpractise@poec.fr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testpractise@poec.fr\"",
+                  "offset": 19
+                }
+              ],
+              "location": "MyStepdefsConnexion.jeSaisisUnLogin(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 192013600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "je saisis un mot de passe \"TEST!Poec12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TEST!Poec12\"",
+                  "offset": 26
+                }
+              ],
+              "location": "MyStepdefsConnexion.jeSaisisUnMotDePasse(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 669406200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "je clique sur LOGIN",
+            "match": {
+              "location": "MyStepdefsConnexion.jeCliqueSurLOGIN()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 189100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "un message d\u0027erreur s affiche \"Error: A user could not be found with this email address\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Error: A user could not be found with this email address\"",
+                  "offset": 30
+                }
+              ],
+              "location": "MyStepdefsConnexion.unMessageDErreurSAffiche(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@REQ_POEC4-2"
+          },
+          {
+            "name": "@TEST_POEC4-25"
+          },
+          {
+            "name": "@TESTSET_POEC4-63"
+          },
+          {
+            "name": "@GR4"
+          }
+        ]
+      }
+    ],
+    "name": "[US2]Authentification",
+    "description": "",
+    "id": "[us2]authentification",
+    "keyword": "Feature",
+    "uri": "classpath:features/ConnexionKO.feature",
+    "tags": [
+      {
+        "name": "@REQ_POEC4-2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 23,
+        "name": "[US5]Informations de compte  Client",
+        "description": "",
+        "id": "[us5]visualisation-des-informations-d--un-utilisateur;[us5]informations-de-compte--client;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3411483000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "j ouvre l application practice.automationtesting",
+            "match": {
+              "location": "MyStepdefsConnexion.jOuvreLApplicationPracticeAutomationtesting()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2211707600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "je me connecte \"poecgroupe4@yopmail.com\" \"Ab_groupe4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"poecgroupe4@yopmail.com\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"Ab_groupe4\"",
+                  "offset": 41
+                }
+              ],
+              "location": "MyStepdefsGestionCompte.jeMeConnecte(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 562753600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "je clique sur  Account Details",
+            "match": {
+              "location": "MyStepdefsGestionCompte.jeCliqueSurAccountDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 136500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Un formulaire avec les informations de client saffiche",
+            "match": {
+              "location": "MyStepdefsGestionCompte.unFormulaireAvecLesInformationsDeClientSaffiche()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 53600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Un espace permet de modifier son mot de passe s affiche",
+            "match": {
+              "location": "MyStepdefsGestionCompte.unEspacePermetDeModifierSonMotDePasseSAffiche()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@REQ_POEC4-14"
+          },
+          {
+            "name": "@TEST_POEC4-29"
+          },
+          {
+            "name": "@TESTSET_POEC4-64"
+          },
+          {
+            "name": "@GR4"
+          }
+        ]
+      }
+    ],
+    "name": "[US5]Visualisation des informations d\u0027 un utilisateur",
+    "description": "",
+    "id": "[us5]visualisation-des-informations-d--un-utilisateur",
+    "keyword": "Feature",
+    "uri": "classpath:features/GererCompte.feature",
+    "tags": [
+      {
+        "name": "@REQ_POEC4-14",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 21,
+        "name": "[US2]Cocher l\u0027option Remember",
+        "description": "",
+        "id": "[us2]authentification;[us2]cocher-l-option-remember;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3992864100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "j ouvre l application practice.automationtesting",
+            "match": {
+              "location": "MyStepdefsConnexion.jOuvreLApplicationPracticeAutomationtesting()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 855001800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "j accède la page My Account",
+            "match": {
+              "location": "MyStepdefsConnexion.jAccèdeLaPageMyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 216067000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "je saisis un login \"poecgroupe4@yopmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"poecgroupe4@yopmail.com\"",
+                  "offset": 19
+                }
+              ],
+              "location": "MyStepdefsConnexion.jeSaisisUnLogin(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78831300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "je saisis un mot de passe \"Ab_groupe4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ab_groupe4\"",
+                  "offset": 26
+                }
+              ],
+              "location": "MyStepdefsConnexion.jeSaisisUnMotDePasse(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66383800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "je coche l\u0027option remember me",
+            "match": {
+              "location": "MyStepdefsConnexion.jeCocheLOptionRememberMe()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 982578000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "je clique sur LOGIN",
+            "match": {
+              "location": "MyStepdefsConnexion.jeCliqueSurLOGIN()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31183300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "la page Dashbord saffiche",
+            "match": {
+              "location": "MyStepdefsConnexion.laPageDashbordSaffiche()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1587780300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "je verifie le champ login prerempli",
+            "match": {
+              "location": "MyStepdefsConnexion.jeVerifieLeChampLoginPrerempli()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@REQ_POEC4-2"
+          },
+          {
+            "name": "@TEST_POEC4-26"
+          },
+          {
+            "name": "@TESTSET_POEC4-63"
+          },
+          {
+            "name": "@GR4"
+          }
+        ]
+      }
+    ],
+    "name": "[US2]Authentification",
+    "description": "",
+    "id": "[us2]authentification",
+    "keyword": "Feature",
+    "uri": "classpath:features/RemenberLogin.feature",
+    "tags": [
+      {
+        "name": "@REQ_POEC4-2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
