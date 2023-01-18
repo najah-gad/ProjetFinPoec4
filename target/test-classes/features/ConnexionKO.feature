@@ -8,7 +8,7 @@ Feature: [US2]Authentification
     And   je saisis un login "<login>"
     And   je saisis un mot de passe "<MDP>"
     And   je clique sur LOGIN
-    Then  un message d'erreur s affiche "<MSG>"
+    Then  un message d'erreur s affiche "<MSG>" "<login>"
     Examples:
       | login                   | MDP         | MSG                                                       |
       | poecgroupe4@yopmail.com | Abgroupe4   | ERROR: The password you entered for the username incorret |

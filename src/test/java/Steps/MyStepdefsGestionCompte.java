@@ -9,25 +9,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class MyStepdefsGestionCompte extends Hooks {
-    @When("je me connecte {string} {string}")
-    public void jeMeConnecte(String login, String MDP) {
-        WebElement btnMyAccounts = driver.findElement(By.xpath("//a[@href='https://practice.automationtesting.in/my-account/']"));
-        btnMyAccounts.click();
-        WebElement loginElt = driver.findElement(By.id("username"));
-        loginElt.sendKeys(login);
-        WebElement mdpElt = driver.findElement(By.id("password"));
-        mdpElt.sendKeys(MDP);
-        WebElement btnLogin = driver.findElement(By.xpath("//input[@class='woocommerce-Button button']"));
-        btnLogin.click();
-    }
+    String lienAcountDeatils = "//a[@href='https://practice.automationtesting.in/my-account/edit-account/']";
 
+    //clic sur Account Details
     @And("je clique sur  Account Details")
     public void jeCliqueSurAccountDetails() {
-        WebElement btnDetails = driver.findElement(By.xpath("//a[@href='https://practice.automationtesting.in/my-account/edit-account/']"));
+        WebElement btnDetails = driver.findElement(By.xpath(lienAcountDeatils));
         btnDetails.click();
 
     }
 
+    //Affichage formulaire des informations clients
     @Then("Un formulaire avec les informations de client saffiche")
     public void unFormulaireAvecLesInformationsDeClientSaffiche() {
         WebElement champUserName = driver.findElement(By.xpath("//input[@name=\"account_first_name\"]"));
@@ -39,6 +31,7 @@ public class MyStepdefsGestionCompte extends Hooks {
 
     }
 
+    //Affichage zone de Saisie nouveau mot de passe
     @And("Un espace permet de modifier son mot de passe s affiche")
     public void unEspacePermetDeModifierSonMotDePasseSAffiche() {
         WebElement currentPassword = driver.findElement(By.xpath("//input[@name=\"password_current\"]"));
@@ -49,4 +42,25 @@ public class MyStepdefsGestionCompte extends Hooks {
         Assert.assertTrue(confirmNewPassWord.isDisplayed());
 
     }
+
+    @And("je saisis une adresse mail {string}")
+    public void jeSaisisUneAdresseMail(String mail) {
+        WebElement adressmail = driver.findElement(By.id("reg_email"));
+        adressmail.sendKeys(mail);
+
+
+    }
+    @And("je saisis un password {string}")
+    public void jeSaisisUnPassword(String PSW) {
+        WebElement password = driver.findElement(By.id("reg_password"));
+        password.sendKeys(PSW);
+    }
+    @And("Je valide avec le bouton REGISTER")
+    public void jeValideAvecLeBoutonREGISTER() {
+        WebElement boutonMyAccounts = driver.findElement(By.xpath("//input[@name=\"register\"]"));
+        boutonMyAccounts.click();
+
+    }
+
+
 }

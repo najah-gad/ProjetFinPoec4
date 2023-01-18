@@ -1,6 +1,7 @@
 package Commun;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,8 +18,9 @@ public class Hooks {
         driver.manage().window().maximize();
         driver.get("https://practice.automationtesting.in/");
     }
-  /*  @After
+    @After
     public void closeDriver(){
+    driver.close();
 
-    }*/
+    }
 }
