@@ -3,19 +3,19 @@
     "line": 2,
     "elements": [
       {
-        "line": 7,
-        "name": "[US8]Accès aux détails des articles",
+        "line": 15,
+        "name": "Valider la création de compte",
         "description": "",
-        "id": "[us8]accès-aux-détails-des-articles;[us8]accès-aux-détails-des-articles",
+        "id": "création-de-compte-client;valider-la-création-de-compte;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4439440200,
+              "duration": 5537755500,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "j ouvre l application practice.automationtesting",
             "match": {
               "location": "MyStepdefsConnexion.jOuvreLApplicationPracticeAutomationtesting()"
@@ -24,101 +24,205 @@
           },
           {
             "result": {
-              "duration": 960410600,
+              "duration": 724680500,
               "status": "passed"
             },
-            "line": 9,
-            "name": "je clique sur le lien SHOP",
+            "line": 8,
+            "name": "j accède la page My Account",
             "match": {
-              "location": "MyStepdefsDescriptionArticle.jeCliqueSurLeLienSHOP()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 992324900,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "je clique sur un article",
-            "match": {
-              "location": "MyStepdefsDescriptionArticle.jeCliqueSurUnArticle()"
+              "location": "MyStepdefsMyAccount.jAccèdeLaPageMyAccount()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 54606300,
+              "duration": 76052200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "je saisis une adresse mail \"groupe4projeT@yopmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"groupe4projeT@yopmail.com\"",
+                  "offset": 27
+                }
+              ],
+              "location": "MyStepdefsGestionCompte.jeSaisisUneAdresseMail(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143563300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "je saisis un password \"Sdqwo8s87!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sdqwo8s87!\"",
+                  "offset": 22
+                }
+              ],
+              "location": "MyStepdefsGestionCompte.jeSaisisUnPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46879100,
               "status": "passed"
             },
             "line": 11,
-            "name": "la page detail article s\u0027affiche",
+            "name": "Je valide avec le bouton REGISTER",
             "match": {
-              "location": "MyStepdefsDescriptionArticle.laPageDetailArticleSAffiche()"
+              "location": "MyStepdefsGestionCompte.jeValideAvecLeBoutonREGISTER()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 209958400,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href\u003d\u0027https://practice.automationtesting.in/my-account/orders/\u0027]\"}\n  (Session info: chrome\u003d109.0.5414.74)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027FRP03388\u0027, ip: \u0027192.168.3.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.17\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\\Users\\FORMAT~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:51901}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7c7fad47bdc40c698ed0b10eea320ddc\n*** Element info: {Using\u003dxpath, value\u003d//a[@href\u003d\u0027https://practice.automationtesting.in/my-account/orders/\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat Steps.MyStepdefsConnexion.laPageDashbordSaffiche(MyStepdefsConnexion.java:65)\r\n\tat ✽.la page Dashbord saffiche(classpath:features/CreationCompte.feature:12)\r\n",
+              "duration": 10032556300,
+              "status": "failed"
             },
             "line": 12,
-            "name": "je verifie le bon affichage des details articles",
+            "name": "la page Dashbord saffiche",
             "match": {
-              "location": "MyStepdefsDescriptionArticle.jeVerifieLeBonAffichageDesDetailsArticles()"
+              "location": "MyStepdefsConnexion.laPageDashbordSaffiche()"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 24188000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "je verifie l affichage le bouton ADD TO BASKET",
-            "match": {
-              "location": "MyStepdefsDescriptionArticle.jeVerifieLAffichageLeBoutonADDTOBASKET()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 31460500,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "je verifie un champ permet d indiquer le nombre exemplaire voulu",
-            "match": {
-              "location": "MyStepdefsDescriptionArticle.jeVerifieUnChampPermetDIndiquerLeNombreExemplaireVoulu()"
-            },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@REQ_POEC4-15"
+            "name": "@REQ_POEC4-4"
           },
           {
-            "name": "@TEST_POEC4-33"
+            "name": "@TEST_POEC4-89"
           },
           {
-            "name": "@TESTSET_POEC4-65"
+            "name": "@GR4_TNR"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Valider la création de compte",
+        "description": "",
+        "id": "création-de-compte-client;valider-la-création-de-compte;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4657751900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "j ouvre l application practice.automationtesting",
+            "match": {
+              "location": "MyStepdefsConnexion.jOuvreLApplicationPracticeAutomationtesting()"
+            },
+            "keyword": "Given "
           },
           {
-            "name": "@GR4"
+            "result": {
+              "duration": 821903700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "j accède la page My Account",
+            "match": {
+              "location": "MyStepdefsMyAccount.jAccèdeLaPageMyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59377000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "je saisis une adresse mail \"testpractise@yopmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testpractise@yopmail.com\"",
+                  "offset": 27
+                }
+              ],
+              "location": "MyStepdefsGestionCompte.jeSaisisUneAdresseMail(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60812100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "je saisis un password \"test_Group12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test_Group12\"",
+                  "offset": 22
+                }
+              ],
+              "location": "MyStepdefsGestionCompte.jeSaisisUnPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53903300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Je valide avec le bouton REGISTER",
+            "match": {
+              "location": "MyStepdefsGestionCompte.jeValideAvecLeBoutonREGISTER()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href\u003d\u0027https://practice.automationtesting.in/my-account/orders/\u0027]\"}\n  (Session info: chrome\u003d109.0.5414.74)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027FRP03388\u0027, ip: \u0027192.168.3.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.17\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\\Users\\FORMAT~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:51962}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 155a4b5f87c8c6021eeba1cd52567c65\n*** Element info: {Using\u003dxpath, value\u003d//a[@href\u003d\u0027https://practice.automationtesting.in/my-account/orders/\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat Steps.MyStepdefsConnexion.laPageDashbordSaffiche(MyStepdefsConnexion.java:65)\r\n\tat ✽.la page Dashbord saffiche(classpath:features/CreationCompte.feature:12)\r\n",
+              "duration": 10044789000,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "la page Dashbord saffiche",
+            "match": {
+              "location": "MyStepdefsConnexion.laPageDashbordSaffiche()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@REQ_POEC4-4"
+          },
+          {
+            "name": "@TEST_POEC4-89"
+          },
+          {
+            "name": "@GR4_TNR"
           }
         ]
       }
     ],
-    "name": "[US8]Accès aux détails des articles",
+    "name": "Création de compte client",
     "description": "",
-    "id": "[us8]accès-aux-détails-des-articles",
+    "id": "création-de-compte-client",
     "keyword": "Feature",
-    "uri": "classpath:features/DescriptionArticle.feature",
+    "uri": "classpath:features/CreationCompte.feature",
     "tags": [
       {
-        "name": "@REQ_POEC4-15",
+        "name": "@REQ_POEC4-4",
         "type": "Tag",
         "location": {
           "line": 1,

@@ -24,7 +24,7 @@ Feature: [US5]Visualisation des informations d' un utilisateur
     Examples:
 
       |login                   |MDP         |MdpActuel      | MDP1          |   MDP2              | MSG|
-      |poecgroupe4@yopmail.com |Cd_groupe4  |Cd_groupe4     | Cd_groupe4    |   Cd_groupe4        | Account details changed successful|
+      |poecgroupe4@yopmail.com |Cd_groupe4  |Cd_groupe4     | Cd_groupe4    |   Cd_groupe4        | Account details changed successfully|
       |poecgroupe4@yopmail.com |Cd_groupe4  |Abdroupe4      | Cd_groupe4    |   Cd_groupe4        | Your current password is incorrect|
-      |poecgroupe4@yopmail.com |Cd_groupe4  |Ab_groupe4     | Cd_groupe4    | Cdgroupe4           | New passwords do not match|
-      |poecgroupe4@yopmail.com |Cd_groupe4  |Cd_groupe4     |               |                     |Champs Obligatoires|
+      |poecgroupe4@yopmail.com |Cd_groupe4  |Ab_groupe4     | Cd_groupe4    |   Cdgroupe4           | New passwords do not match|
+      |poecgroupe4@yopmail.com |Cd_groupe4  |Cd_groupe4     |               |                     |Please fill out all password fields|
