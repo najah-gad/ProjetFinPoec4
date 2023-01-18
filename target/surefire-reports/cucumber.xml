@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="6.71525">
-    <testcase classname="[US8]Accès aux détails des articles" name="[US8]Accès aux détails des articles" time="6.71525">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="13.189035">
+    <testcase classname="[U9]Consultation du panier" name="[U9]Modification des articles du panier" time="13.189035">
         <system-out>
             <![CDATA[Given j ouvre l application practice.automationtesting......................passed
-And je clique sur le lien SHOP..............................................passed
-When je clique sur un article...............................................passed
-Then la page detail article s'affiche.......................................passed
-And je verifie le bon affichage des details articles........................passed
-And je verifie l affichage le bouton ADD TO BASKET..........................passed
-And je verifie un champ permet d indiquer le nombre exemplaire voulu........passed
+When j accède la page My Account............................................passed
+And je saisis un login "poecgroupe4@yopmail.com"............................passed
+And je saisis un mot de passe "Cd_groupe4"..................................passed
+And je clique sur LOGIN.....................................................passed
+And la page Dashbord saffiche...............................................passed
+And je clique sur la page shop..............................................passed
+And je clique sur le lien ADD TO BASKET.....................................passed
+And je clique sur le bouton panier..........................................passed
+And l affichage de page panier..............................................passed
+And je verifie l affichage des articles ajouteée............................passed
+And je verfie  la quantité..................................................passed
+And je modifie la quantité d un article par le champs quantité "8"..........passed
+And And je clique sur le bouton Update Basket...............................passed
+Then la quantité de l'article est modifié...................................passed
 ]]>
         </system-out>
     </testcase>
