@@ -3,12 +3,11 @@ package Steps;
 import Commun.Hooks;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class MyStepdefsGestionCompte extends Hooks {
+public class MyStepdefsAccountsDetails extends Hooks {
     String lienAcountDeatils = "//a[@href='https://practice.automationtesting.in/my-account/edit-account/']";
 
     //clic sur Account Details
@@ -22,7 +21,7 @@ public class MyStepdefsGestionCompte extends Hooks {
     //Affichage formulaire des informations clients
     @Then("Un formulaire avec les informations de client saffiche")
     public void unFormulaireAvecLesInformationsDeClientSaffiche() {
-        WebElement champUserName = driver.findElement(By.xpath("//input[@name=\"account_first_name\"]"));
+       WebElement champUserName = driver.findElement(By.xpath("//input[@name=\"account_first_name\"]"));
         Assert.assertTrue(champUserName.isDisplayed());
         WebElement champLastName = driver.findElement(By.xpath("//input[@name=\"account_last_name\"]"));
         Assert.assertTrue(champLastName.isDisplayed());
@@ -42,25 +41,8 @@ public class MyStepdefsGestionCompte extends Hooks {
         Assert.assertTrue(confirmNewPassWord.isDisplayed());
 
     }
-
-    @And("je saisis une adresse mail {string}")
-    public void jeSaisisUneAdresseMail(String mail) {
-        WebElement adressmail = driver.findElement(By.id("reg_email"));
-        adressmail.sendKeys(mail);
-
-
-    }
-    @And("je saisis un password {string}")
-    public void jeSaisisUnPassword(String PSW) {
-        WebElement password = driver.findElement(By.id("reg_password"));
-        password.sendKeys(PSW);
-    }
-    @And("Je valide avec le bouton REGISTER")
-    public void jeValideAvecLeBoutonREGISTER() {
-        WebElement boutonMyAccounts = driver.findElement(By.xpath("//input[@name=\"register\"]"));
-        boutonMyAccounts.click();
-
-    }
-
-
 }
+
+
+
+

@@ -21,7 +21,7 @@ public class MyStepdefsLogout extends Hooks {
         Assert.assertTrue(Affichagemyaccount.isDisplayed());
 
     }
-
+    // la page Account affiche les pavé de "Login" et de "Register"
     @And("L affichage des pavé de Login et de Registe")
     public void lAffichageDesPavéDeLoginEtDeRegiste() {
         WebElement AffichageLogin = driver.findElement(By.xpath("//*[@id=\"customer_login\"]/div[1]/form/p[3]/input[3]"));

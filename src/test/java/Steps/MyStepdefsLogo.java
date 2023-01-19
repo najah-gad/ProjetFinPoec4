@@ -9,6 +9,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class MyStepdefsLogo extends Hooks {
+
+    //Verification presence de LOGO sur toute les pages de l'application
+
     @When("je verifie l affichage logo AT")
     public void jeVerifieLAffichageLogoAT() {
         WebElement AffichageLogo = driver.findElement(By.xpath("//*[@id=\"site-logo\"]/a/img"));
@@ -34,7 +37,6 @@ public class MyStepdefsLogo extends Hooks {
     public void leLogoRederigeVersLaPageDAcceuilViaUnLien() {
         WebElement pageacceuil = driver.findElement(By.xpath("//*[@id=\"n2-ss-6\"]/div[1]/div/div/div[1]/div[1]/img"));
         Assert.assertTrue(pageacceuil.isDisplayed());
-
 
 
     }
