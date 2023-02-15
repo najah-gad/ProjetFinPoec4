@@ -30,9 +30,11 @@ public class ImportResultToxray {
         request2.addHeader("Content-Type", "application/json");
         request2.addHeader("Authorization", "Bearer " + token);
         Thread.sleep(10000);
-        System.out.println("le path =" + System.getProperty("user.dir") + "\\target\\cucumber.json");
-        StringEntity params = new StringEntity(Files.readString(Path.of(System.getProperty("user.dir") + "\\target\\cucumber.json"), StandardCharsets.UTF_8));
+       System.out.println("le path =" + System.getProperty("user.dir") + "\\target\\cucumber.json");
+       StringEntity params = new StringEntity(Files.readString(Path.of(System.getProperty("user.dir") + "\\target\\cucumber.json"), StandardCharsets.UTF_8));
         request2.setEntity(params);
+
+
 
         try (
                 CloseableHttpClient httpClient2 = HttpClients.createDefault();

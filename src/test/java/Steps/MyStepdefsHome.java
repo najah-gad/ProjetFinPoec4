@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 public class MyStepdefsHome extends Hooks {
     //Ouverture Application
     @Given("j ouvre l application practice.automationtesting")
+
     public void jOuvreLApplicationPracticeAutomationtesting() {
         super.initDriver();
         WebElement pageAccueil = driver.findElement(By.xpath("//div[@class='col4-2 sub_column sub_column_1-0-1-1 sub_column_post_22']"));

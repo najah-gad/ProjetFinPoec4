@@ -11,13 +11,13 @@ import java.security.NoSuchAlgorithmException;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        tags={"@TEST_POEC4-52"},
-        plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json","junit:target/surefire-reports/cucumber.xml"},
+        tags={"@TEST_POEC4-19"},
+        plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json","junit:target/surefire-reports/cucumber.xml"}
         // features = {"src/test/resources"}
-        glue ={"Steps"}
+       // glue ={"Steps"}
 )
 public class RunnerTest {
-   /*  @AfterClass
+/*    @AfterClass
     public static void monAfter() throws NoSuchAlgorithmException, KeyStoreException, IOException, InterruptedException, KeyManagementException {
          ImportResultToxray res = new ImportResultToxray();
          res.RemonteResultats();
